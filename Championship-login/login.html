@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Championship-Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- background options: default, knitwear, weaving, sofa-small, sofa-medium, sofa-big, kilt-1, kilt-2 -->
+    <div class="default">
+        <main>
+            <div class="wrapper">
+                <div class="intro">
+                    <div class="logo">Лого</div>
+                    <form rel="login-form">
+                        <div rel="control.submitbox" class="control-submitbox">
+                            <label class="label" for="password">Пароль</label>
+                            <div class="input-box">
+                                <input 
+                                    rel="submitbox.input"
+                                    data-pattern="[a-zA-Z0-9]+$"
+                                    data-verify-on-input="false"
+                                    type="password" 
+                                    name="password" 
+                                    value=""
+                                    class="submitbox-input input"
+                                    id="password"
+                                />
+                                <button rel="_submitbox.button" type="submit" class="button submit">
+                                    <div class="button-arrow"></div>
+                                </button>
+                            </div>
+                            <span rel="_submitbox.message" data-error="Некорректно введенный пароль" class="error-message"></span>
+                        </div>
+                    </form>
+                    <div class="intro-container">
+                        <a class="intro__link" href="registration.html">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/controls/editbox.js"></script>
+    <script src="./js/controls/submitbox.js"></script>
+    <script src="./js/pages/login.js"></script>
+    <!-- <script>
+        alert(`${window.navigator.appVersion}`)
+    </script> -->
+</body>
+</html>

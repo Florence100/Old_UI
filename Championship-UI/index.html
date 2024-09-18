@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Championship-UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body body-1">
+    <div class="wrapper">
+        <div class="page-1">
+            <div class="column">
+                <div class="container">
+                    <form>
+                        <div rel="control.editbox">
+                            <label class="label" for="email">E-mail</label>
+                            <div  class="input-box">
+                                <input 
+                                    rel="editbox.input"
+                                    data-pattern="[a-zA-Z0-9_\.]+@(:?[a-zA-Z0-9_\.]+\.)+[a-zA-Z0-9_\.]+"
+                                    data-verify-on-input="false"
+                                    placeholder=""
+                                    type="text"
+                                    name="email"
+                                    value=""
+                                    class="input input-email"
+                                    id="email"
+                                />
+                            </div>
+                            <span rel="_editbox.message" data-error="Пожалуйста, убедитесь в корректности введенных данных" class="error-message"></span>
+                        </div>
+                        <div rel="control.editbox">
+                            <!-- <label class="label" for="email">Имя</label> -->
+                            <div  class="input-box">
+                                <input 
+                                    rel="editbox.input"
+                                    data-pattern="[a-zA-Z0-9]+$"
+                                    data-verify-on-input="false"
+                                    placeholder="Ваше имя"
+                                    type="text"
+                                    name="email"
+                                    value=""
+                                    class="input input-name"
+                                />
+                            </div>
+                            <span rel="_editbox.message" data-error="Пожалуйста, убедитесь в корректности введенных данных" class="error-message"></span>
+                        </div>
+                        <div class="container">
+                            <div class="button-box">
+                                <button type="submit" class="button button-submit">Зарегистрироваться</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div class="container">
+                    <form>
+                        <div rel="control.submitbox" class="control-submitbox">
+                            <label class="label" for="password">Пароль</label>
+                            <div class="input-box">
+                                <input 
+                                    rel="submitbox.input"
+                                    data-pattern="[a-zA-Z0-9]+$"
+                                    data-verify-on-input="false"
+                                    type="password" 
+                                    name="password" 
+                                    value=""
+                                    class="submitbox-input input"
+                                    id="password"
+                                />
+                                <button rel="_submitbox.button" type="submit" class="button submit">
+                                    <div class="button-arrow"></div>
+                                </button>
+                            </div>
+                            <span rel="_submitbox.message" data-error="Некорректно введенный пароль" class="error-message"></span>
+                        </div>
+                    </form>
+                    <form>
+                        <div rel="control.submitbox" class="control-submitbox">
+                            <div class="input-box">
+                                <input 
+                                    rel="submitbox.input"
+                                    data-pattern="[a-zA-Z0-9]+$"
+                                    data-verify-on-input="false"
+                                    placeholder="Ваш пароль" 
+                                    type="password" 
+                                    name="password" 
+                                    value=""
+                                    class="submitbox-input input"
+                                />
+                                <button rel="_submitbox.button" type="submit" class="button submit">
+                                    <div class="button-arrow"></div>
+                                </button>
+                            </div>
+                            <span rel="_submitbox.message" data-error="Некорректно введенный пароль" class="error-message"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- <div class="container">
+                    <form>
+                        <label class="label" for="password">Пароль</label>
+                        <div class="input-box">
+                            <input id="password" type="password" class="input"   />
+                            <button type="submit" class="button submit">
+                                <div class="button-arrow"></div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="container">
+                    <form>
+                        <div class="input-box">
+                            <input type="password" class="input" placeholder="Пароль"/>
+                            <button type="submit" class="button submit">
+                                <div class="button-arrow"></div>
+                            </button>
+                        </div>
+                    </form>
+                </div> -->
+                <div class="container" onmousedown="return false">
+                    <!-- <form class="form-radio" onmousedown="return false"> -->
+                        <div class="radio">
+                            <input class="custom-radio" name="radio" type="radio" id="value-1" value="value-1" checked>
+                            <label for="value-1">Вариант 1</label>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio" name="radio" type="radio" id="value-2" value="value-2">
+                            <label for="value-2">Вариант 2</label>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio" name="radio" type="radio" id="value-3" value="value-3">
+                            <label for="value-3">Вариант 3</label>
+                        </div>
+                    <!-- </form> -->
+                </div>
+                <div class="container">
+                    <form class="checkbox">
+                        <div class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" id="value1" name="Вариант 1" value="value1">
+                            <label for="value1">Вариант 1</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" id="value2" name="Вариант 2" value="value2">
+                            <label for="value2">Вариант 2</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" id="value3" name="Вариант 3" value="value3">
+                            <label for="value3">Вариант 3</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="container">
+                    <div class="dropbox-border" rel="control.dropbox" data-default-value="Вариант 11" data-default-index="11">
+                        <div class="dropbox">
+                            <button type="button" class="button-dropbox" rel="dropbox.button">
+                                <div rel="_dropbox.value" data-placeholder="Выберите из списка" data-value="Вариант 33" data-index="56"></div>
+                                <div rel="_dropbox.arrow" class="button-img"></div>
+                            </button>
+                            <div class="dropbox-dropdown" rel="_dropbox.dropdown">
+                                <ul rel="dropbox.options" class="dropbox-options dropbox-options-animate scroll">
+                                    <li class="dropbox-option" data-value="Нет подходящих вариантов" data-index="0">Нет</li>
+                                    <li class="dropbox-option" data-value="Вариант 5" data-index="5">Вариант 1</li>
+                                    <li class="dropbox-option" data-value="Вариант 2" data-index="2">Вариант 2</li>
+                                    <li class="dropbox-option" data-value="Вариант 3" data-index="3">Вариант 3</li>
+                                    <li class="dropbox-option" data-value="Дубликат" data-index="3">Дубликат</li>
+                                    <li class="dropbox-option" data-value="Вариант 1" data-index="1">Вариант 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-2">
+                    <div class="dropbox-border" rel="control.dropbox" data-default-value="Вариант 11" data-default-index="11">
+                        <div class="dropbox">
+                            <button type="button" class="button-dropbox" rel="dropbox.button">
+                                <div rel="_dropbox.value" data-placeholder="" data-value="Вариант 33" data-index="56"></div>
+                                <div rel="_dropbox.arrow" class="button-img"></div>
+                            </button>
+                            <div class="dropbox-dropdown" rel="_dropbox.dropdown">
+                                <ul rel="dropbox.options" class="dropbox-options dropbox-options-animate">
+                                    <li class="dropbox-option" data-value="Вариант 1" data-index="0">Нет</li>
+                                    <li class="dropbox-option" data-value="Вариант 2" data-index="5">Вариант 1</li>
+                                    <li class="dropbox-option" data-value="Вариант 3" data-index="2">Вариант 2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="panel-menu-border" rel="control.panel-menu">
+                <div  class="panel-menu">
+                    <ul>
+                        <li rel="control.menu-tab"><a href="#1">Menu</a></li>
+                        <li rel="control.menu-tab" class="disabled"><a href="#2">Menu</a></li>
+                        <li rel="control.menu-tab"><a href="#3">Menu</a></li>
+                        <li rel="control.menu-tab"><a href="#4">Menu</a></li>
+                        <li rel="control.menu-tab"><a href="#5">Menu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-2">
+            <!-- row-hover - выделение линии
+            column-hover - выделение столбца -->
+            <div class="table-container">
+                <div class="table-border">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Заголовок 1</th>
+                                <th>Заголовок 2</th>
+                                <th>Заголовок 3</th>
+                                <th>Заголовок 4</th>
+                                <th>Заголовок 5</th>
+                            </tr>
+                        </thead>
+                        <tfoot class="tfoot">
+                            <tr>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="page-2">
+            <!-- row-hover - выделение линии
+            column-hover - выделение столбца -->
+            <div class="table-container column-hover row-hover">
+                <div class="table-border">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Заголовок 1</th>
+                                <th>Заголовок 2</th>
+                                <th>Заголовок 3</th>
+                                <th>Заголовок 4</th>
+                                <th>Заголовок 5</th>
+                            </tr>
+                        </thead>
+                        <tfoot class="tfoot">
+                            <tr>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="page-2">
+            <div class="table-container row-style row-hover">
+                <div class="table-border">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Заголовок 1</th>
+                                <th>Заголовок 2</th>
+                                <th>Заголовок 3</th>
+                                <th>Заголовок 4</th>
+                                <th>Заголовок 5</th>
+                            </tr>
+                        </thead>
+                        <tfoot class="tfoot">
+                            <tr>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                                <td>Итого</td>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                        </tbody>   
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="page-2">
+            <div class="table-container column-style column-hover">
+                <div class="table-border">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Заголовок 1</th>
+                                <th>Заголовок 2</th>
+                                <th>Заголовок 3</th>
+                                <th>Заголовок 4</th>
+                                <th>Заголовок 5</th>
+                            </tr> 
+                        </thead>
+                        <tfoot class="tfoot">
+                            <tr>
+                                <td class="inactive">Итого</td>
+                                <td class="inactive">Итого</td>
+                                <td class="inactive">Итого</td>
+                                <td class="inactive">Итого</td>
+                                <td class="inactive">Итого</td>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                            <tr>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                                <td>Ячейка</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="editbox.js"></script>
+    <script src="dropbox.js"></script>
+    <script src="panelmenu.js"></script>
+    <script src="submitbox.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

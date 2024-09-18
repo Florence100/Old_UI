@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Championship-Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- background options: default, knitwear, weaving, sofa-small, sofa-medium, sofa-big, kilt-1, kilt-2 -->
+    <div class="default">
+        <main>
+            <div class="wrapper">
+                <div class="registration">
+                    <div class="registration__top">
+                        <div class="logo registration__logo">Logo</div>
+                        <div class="title registration__title">Регистрация</div>
+                    </div>
+                    <div class="registration__welcome" rel="registration__welcome">
+                        <div class="registration__welcome__title">Добро пожаловать!</div>
+                        <div class="registration__user-info">
+                            <div class="user-name">
+                                <div class="user-name__field">Имя:</div>
+                                <div class="user-name__value" rel="user-name__value"></div>
+                            </div>
+                            <div class="user-email">
+                                <div class="user-email__field">E-mail:</div>
+                                <div class="user-email__value" rel="user-email__value"></div>
+                            </div>
+                        </div>
+                        <div class="registration__password">
+                            <div class="registration__password__title">Пароль</div>
+                            <div
+                                rel="control.copyableLabel"
+                                data-value="A1B2C3D4E5"
+                                data-subscription-keys=""
+                                class="copylabel">
+                                <span rel="copyableLabel.window" class="copylabel__window"></span>
+                                <span rel="copyableLabel.message" data-message="Текст скопирован в буфер обмена" class="copylabel__message"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/controls/label.js"></script>
+    <script src="./js/controls/copyableLabel.js"></script>
+    <script src="./js/pages/registration.js"></script>
+    <script src="./js/pages/welcome.js"></script>
+</body>
+</html>

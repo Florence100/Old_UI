@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>Championship-Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- background options: default, knitwear, weaving, sofa-small, sofa-medium, sofa-big, kilt-1, kilt-2 -->
+    <div class="default">
+        <main>
+            <div class="wrapper">
+                <div class="registration">
+                    <div class="registration__top">
+                        <div class="logo registration__logo">Logo</div>
+                        <div class="title registration__title">Регистрация</div>
+                    </div>
+                    <form class="registration__form">
+                        <div rel="control.editbox">
+                            <label class="label" for="name">Имя</label>
+                            <div  class="input-box">
+                                <input 
+                                    rel="editbox.input"
+                                    data-pattern="[a-zA-Z0-9]+$"
+                                    data-verify-on-input="false"
+                                    placeholder="" 
+                                    type="text"     
+                                    name="email" 
+                                    value=""
+                                    class="input input-name"
+                                    id="name"
+                                />
+                            </div>
+                            <span rel="_editbox.message" data-error="Пожалуйста, убедитесь в корректности введенных данных" class="error-message registration__error-message"></span>
+                        </div>
+                        <div rel="control.editbox">
+                            <label class="label" for="name">E-mail</label>
+                            <div  class="input-box">
+                                <input 
+                                    rel="editbox.input"
+                                    data-pattern="[a-zA-Z0-9_\.]+@(:?[a-zA-Z0-9_\.]+\.)+[a-zA-Z0-9_\.]+"
+                                    data-verify-on-input="false"
+                                    placeholder="" 
+                                    type="text"     
+                                    name="email" 
+                                    value=""
+                                    class="input input-email"
+                                    id="name"
+                                />
+                            </div>
+                            <span rel="_editbox.message" data-error="Пожалуйста, убедитесь в корректности введенных данных" class="error-message registration__error-message"></span>
+                        </div>
+                        <div class="registration__botom">
+                            <a class="link-back" href="login.html">
+                                <div class="link-back__arrow"></div>
+                                <div class="link-back__text">Назад</div>
+                            </a>
+                            <div class="button-box">
+                                <button type="submit" class="button button-submit">Зарегистрироваться</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/controls/editbox.js"></script>
+    <script src="./js/controls/submitbox.js"></script>
+    <script src="./js/pages/registration.js"></script>
+</body>
+</html>
